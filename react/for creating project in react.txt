@@ -1,0 +1,6 @@
+// for creating project in react
+
+node "C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js" create vite@latest
+
+// to run project in react
+node "C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js" run dev

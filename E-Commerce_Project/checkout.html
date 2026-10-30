@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Checkout | AURORA LUXE</title>
+  <meta name="description" content="Complete your luxury order securely with encrypted payment gateways.">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom Design System CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Minimalist Checkout Header -->
+  <header class="py-3 border-bottom border-secondary" style="background: var(--bg-surface);">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="brand-logo text-decoration-none">
+        <div class="brand-logo-icon"><i class="bi bi-gem"></i></div>
+        <span class="brand-text-gradient">AURORA</span>
+        <span class="brand-badge">LUXE</span>
+      </a>
+
+      <div class="d-flex align-items-center gap-3">
+        <span class="small text-muted d-none d-sm-inline"><i class="bi bi-lock-fill text-success me-1"></i> 256-Bit SSL Encrypted Checkout</span>
+        <button class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill text-warning"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Checkout Main -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Left Column: Forms -->
+        <div class="col-lg-7">
+          <form id="checkout-form">
+            <!-- 1. Customer Information -->
+            <div class="mb-5">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center fw-bold" style="width: 28px; height: 28px; font-size: 0.85rem;">1</span>
+                <h5 class="fw-bold mb-0">Contact Information</h5>
+              </div>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label small text-muted">First Name</label>
+                  <input type="text" id="billing-first-name" class="form-control form-glass" required placeholder="Alexander">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small text-muted">Last Name</label>
+                  <input type="text" id="billing-last-name" class="form-control form-glass" required placeholder="Wright">
+                </div>
+                <div class="col-12">
+                  <label class="form-label small text-muted">Email Address (for order confirmation)</label>
+                  <input type="email" id="billing-email" class="form-control form-glass" required placeholder="alexander.wright@example.com">
+                </div>
+                <div class="col-12">
+                  <label class="form-label small text-muted">Phone Number</label>
+                  <input type="tel" class="form-control form-glass" required placeholder="+1 (555) 234-5678">
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Shipping Address -->
+            <div class="mb-5">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center fw-bold" style="width: 28px; height: 28px; font-size: 0.85rem;">2</span>
+                <h5 class="fw-bold mb-0">Delivery Address</h5>
+              </div>
+              <div class="row g-3">
+                <div class="col-12">
+                  <label class="form-label small text-muted">Street Address</label>
+                  <input type="text" class="form-control form-glass" required placeholder="742 Evergreen Terrace, Apt 4B">
+                </div>
+                <div class="col-md-5">
+                  <label class="form-label small text-muted">City</label>
+                  <input type="text" class="form-control form-glass" required placeholder="San Francisco">
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label small text-muted">State / Region</label>
+                  <input type="text" class="form-control form-glass" required placeholder="California">
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label small text-muted">Postal Code</label>
+                  <input type="text" class="form-control form-glass" required placeholder="94107">
+                </div>
+                <div class="col-12">
+                  <label class="form-label small text-muted">Country / Territory</label>
+                  <select class="form-select form-glass">
+                    <option selected>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Canada</option>
+                    <option>Germany</option>
+                    <option>Japan</option>
+                    <option>Australia</option>
+                    <option>India</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Payment Method -->
+            <div class="mb-5">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center fw-bold" style="width: 28px; height: 28px; font-size: 0.85rem;">3</span>
+                <h5 class="fw-bold mb-0">Payment Option</h5>
+              </div>
+
+              <div class="d-flex flex-column gap-3 mb-4">
+                <label class="payment-method-card selected">
+                  <input type="radio" name="paymentMethod" value="card" checked class="form-check-input mt-0 me-2">
+                  <div class="flex-grow-1">
+                    <div class="fw-bold small text-white">Credit / Debit Card</div>
+                    <span class="text-muted" style="font-size: 0.75rem;">Visa, Mastercard, American Express</span>
+                  </div>
+                  <div class="d-flex gap-2 text-muted fs-5">
+                    <i class="bi bi-credit-card"></i>
+                  </div>
+                </label>
+
+                <label class="payment-method-card">
+                  <input type="radio" name="paymentMethod" value="upi" class="form-check-input mt-0 me-2">
+                  <div class="flex-grow-1">
+                    <div class="fw-bold small text-white">Instant UPI / QR / NetBanking</div>
+                    <span class="text-muted" style="font-size: 0.75rem;">Fast mobile payment & zero extra charges</span>
+                  </div>
+                  <i class="bi bi-qr-code-scan text-muted fs-5"></i>
+                </label>
+
+                <label class="payment-method-card">
+                  <input type="radio" name="paymentMethod" value="cod" class="form-check-input mt-0 me-2">
+                  <div class="flex-grow-1">
+                    <div class="fw-bold small text-white">Cash on Delivery (COD)</div>
+                    <span class="text-muted" style="font-size: 0.75rem;">Pay upon safe courier arrival</span>
+                  </div>
+                  <i class="bi bi-cash-stack text-muted fs-5"></i>
+                </label>
+              </div>
+
+              <!-- Credit Card Fields -->
+              <div id="credit-card-fields" class="p-3 rounded-4 border border-secondary mb-3" style="background: rgba(255, 255, 255, 0.02);">
+                <div class="row g-3">
+                  <div class="col-12">
+                    <label class="form-label small text-muted">Card Number</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-dark border-secondary text-muted"><i class="bi bi-credit-card-2-front"></i></span>
+                      <input type="text" class="form-control form-glass" placeholder="4242 &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; 4242" value="4242 •••• •••• 4242">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small text-muted">Expiration Date</label>
+                    <input type="text" class="form-control form-glass" placeholder="MM / YY" value="12/28">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small text-muted">Security CVC</label>
+                    <input type="password" class="form-control form-glass" placeholder="CVC" maxlength="4" value="888">
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small text-muted">Cardholder Full Name</label>
+                    <input type="text" class="form-control form-glass" placeholder="Alexander Wright">
+                  </div>
+                </div>
+              </div>
+
+              <!-- UPI Fields -->
+              <div id="upi-fields" class="p-3 rounded-4 border border-secondary mb-3" style="display: none; background: rgba(255, 255, 255, 0.02);">
+                <label class="form-label small text-muted">Enter Virtual Payment Address (VPA / UPI ID)</label>
+                <input type="text" class="form-control form-glass" placeholder="username@okhdfcbank or phone@upi">
+                <small class="text-muted mt-1 d-block">You will receive a notification to authenticate on your banking app.</small>
+              </div>
+            </div>
+
+            <!-- Place Order Submit Button -->
+            <button type="submit" class="btn btn-aurora-primary w-100 py-3 fs-6">
+              <i class="bi bi-lock-fill me-2"></i> Place Order Securely
+            </button>
+            <p class="text-center text-muted small mt-2">By clicking Place Order, you agree to Aurora Luxe's terms & privacy policies.</p>
+          </form>
+        </div>
+
+        <!-- Right Column: Order Summary -->
+        <div class="col-lg-5">
+          <div class="p-4 rounded-4 sticky-top" style="top: 100px; background: var(--bg-card); border: 1px solid var(--border-glass);">
+            <h5 class="fw-bold mb-3">Order Overview</h5>
+            
+            <div id="checkout-items-summary">
+              <!-- Dynamically populated by app.js renderCheckoutSummary() -->
+            </div>
+
+            <div class="p-3 rounded-3 mt-4 border border-secondary" style="background: rgba(16, 185, 129, 0.05);">
+              <div class="d-flex align-items-center gap-2 text-success small fw-bold mb-1">
+                <i class="bi bi-shield-check fs-5"></i>
+                <span>Aurora Luxe Buyer Protection</span>
+              </div>
+              <p class="text-muted small mb-0">Includes full transit coverage, authentic origin guarantee, and 30-day money-back guarantee.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="aurora-footer py-4 mt-5">
+    <div class="container text-center text-muted small">
+      &copy; 2026 Aurora Luxe Inc. Secured with 256-Bit SSL Encryption.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURORA LUXE — Modern Lifestyle, Audio & Smart Electronics</title>
+  <meta name="description" content="Discover curated luxury electronics, spatial audio, and futuristic minimalist apparel at Aurora Luxe. Free worldwide shipping.">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom Design System CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-ticker text-center">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span class="d-none d-md-inline"><i class="bi bi-shield-check me-1"></i> 100% Genuine Certified Luxury</span>
+      <span><i class="bi bi-stars me-1"></i> SPECIAL OFFER: Use code <strong class="badge bg-white text-dark ms-1">AURORA20</strong> for 20% Off at Checkout!</span>
+      <span class="d-none d-md-inline"><i class="bi bi-globe me-1"></i> Worldwide Express Shipping</span>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="aurora-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo text-decoration-none">
+        <div class="brand-logo-icon">
+          <i class="bi bi-gem"></i>
+        </div>
+        <span class="brand-text-gradient">AURORA</span>
+        <span class="brand-badge">LUXE</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="d-none d-lg-flex align-items-center gap-1">
+        <a href="index.html" class="nav-link-custom active"><i class="bi bi-house"></i> Home</a>
+        <a href="shop.html" class="nav-link-custom"><i class="bi bi-grid"></i> Collections</a>
+        <a href="shop.html?category=electronics" class="nav-link-custom">Electronics</a>
+        <a href="shop.html?category=audio" class="nav-link-custom">Audio</a>
+        <a href="shop.html?category=fashion" class="nav-link-custom">Fashion</a>
+        <a href="contact.html" class="nav-link-custom"><i class="bi bi-headset"></i> Support</a>
+      </div>
+
+      <!-- Search bar & Action Icons -->
+      <div class="d-flex align-items-center gap-3">
+        <!-- Search bar -->
+        <div class="search-wrapper d-none d-sm-block">
+          <i class="bi bi-search search-icon"></i>
+          <input type="text" class="search-input" placeholder="Search gadgets, watches, fashion..." autocomplete="off">
+        </div>
+
+        <!-- Dark/Light Theme Toggle -->
+        <button class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill text-warning"></i>
+        </button>
+
+        <!-- Wishlist Button -->
+        <a href="wishlist.html" class="action-icon-btn" title="Wishlist">
+          <i class="bi bi-heart"></i>
+          <span class="badge-counter wishlist-badge" style="display: none;">0</span>
+        </a>
+
+        <!-- Cart Offcanvas Trigger -->
+        <button class="action-icon-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" title="Shopping Bag">
+          <i class="bi bi-bag"></i>
+          <span class="badge-counter cart-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="btn btn-aurora-outline d-lg-none p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+          <i class="bi bi-list fs-5"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Offcanvas -->
+  <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="mobileNav">
+    <div class="offcanvas-header border-bottom border-secondary">
+      <h5 class="offcanvas-title fw-bold">AURORA <span class="text-primary">LUXE</span></h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="search-wrapper mb-4">
+        <i class="bi bi-search search-icon"></i>
+        <input type="text" class="search-input" placeholder="Search products...">
+      </div>
+      <div class="d-flex flex-column gap-2">
+        <a href="index.html" class="nav-link-custom active"><i class="bi bi-house me-2"></i> Home</a>
+        <a href="shop.html" class="nav-link-custom"><i class="bi bi-grid me-2"></i> All Collections</a>
+        <a href="shop.html?category=electronics" class="nav-link-custom"><i class="bi bi-cpu me-2"></i> Smart Electronics</a>
+        <a href="shop.html?category=audio" class="nav-link-custom"><i class="bi bi-headphones me-2"></i> Audio & Sound</a>
+        <a href="shop.html?category=fashion" class="nav-link-custom"><i class="bi bi-tag me-2"></i> Urban Fashion</a>
+        <a href="wishlist.html" class="nav-link-custom"><i class="bi bi-heart me-2"></i> Wishlist</a>
+        <a href="cart.html" class="nav-link-custom"><i class="bi bi-bag me-2"></i> Shopping Bag</a>
+        <a href="contact.html" class="nav-link-custom"><i class="bi bi-chat-dots me-2"></i> Help & Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="hero-tag">
+            <i class="bi bi-stars"></i> Next-Gen Lifestyle & Acoustics 2026
+          </span>
+          <h1 class="hero-title">
+            The Intersection of <span class="hero-title-highlight">Acoustic Mastery</span> & Futuristic Style
+          </h1>
+          <p class="hero-desc">
+            Immerse yourself in precision audio, aerospace titanium wearables, and avant-garde street fashion crafted for discerning pioneers.
+          </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="shop.html" class="btn btn-aurora-primary">
+              <i class="bi bi-bag-check"></i> Explore Catalog
+            </a>
+            <a href="#flash-deals-section" class="btn btn-aurora-outline">
+              <i class="bi bi-lightning-charge"></i> Flash Deals
+            </a>
+          </div>
+
+          <!-- Customer Trust Row -->
+          <div class="d-flex align-items-center gap-4 mt-5 pt-3 border-top border-secondary">
+            <div>
+              <div class="fs-4 fw-bold text-white">4.9 <span class="text-warning fs-5">★</span></div>
+              <div class="text-muted small">Over 15,000+ Reviews</div>
+            </div>
+            <div class="border-start border-secondary ps-4">
+              <div class="fs-4 fw-bold text-white">60-Hour</div>
+              <div class="text-muted small">Ultra Battery Life</div>
+            </div>
+            <div class="border-start border-secondary ps-4">
+              <div class="fs-4 fw-bold text-white">100%</div>
+              <div class="text-muted small">Satisfaction Guaranteed</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-card">
+            <img src="images/hero_tech.jpg" alt="Aurora Luxe Premium Products">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Perks Bar -->
+  <section class="py-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="perk-card">
+            <div class="perk-icon-wrap icon-gradient-indigo">
+              <i class="bi bi-truck"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">Free Express Delivery</h6>
+              <span class="text-muted small">On orders over $99</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="perk-card">
+            <div class="perk-icon-wrap icon-gradient-cyan">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">2-Year Warranty</h6>
+              <span class="text-muted small">Global replacement cover</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="perk-card">
+            <div class="perk-icon-wrap icon-gradient-amber">
+              <i class="bi bi-arrow-repeat"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">30-Day Money Back</h6>
+              <span class="text-muted small">No questions asked</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="perk-card">
+            <div class="perk-icon-wrap icon-gradient-emerald">
+              <i class="bi bi-credit-card-2-front"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">256-Bit SSL Checkout</h6>
+              <span class="text-muted small">Encrypted & protected</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Showcase -->
+  <section class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <div>
+          <span class="text-primary text-uppercase fw-bold small letter-spacing-1">Curated Departments</span>
+          <h2 class="fw-bold mb-0">Explore Collections</h2>
+        </div>
+        <a href="shop.html" class="btn btn-aurora-outline btn-sm">All Categories &rarr;</a>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg">
+          <a href="shop.html?category=audio" class="category-pill-card">
+            <div class="cat-img-wrap">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&auto=format&fit=crop&q=80" alt="Audio">
+            </div>
+            <div>
+              <h6 class="fw-bold mb-0">Audio & Sound</h6>
+              <span class="text-muted small">Studio ANC</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg">
+          <a href="shop.html?category=electronics" class="category-pill-card">
+            <div class="cat-img-wrap">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&auto=format&fit=crop&q=80" alt="Electronics">
+            </div>
+            <div>
+              <h6 class="fw-bold mb-0">Smart Tech</h6>
+              <span class="text-muted small">Wearables & Input</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg">
+          <a href="shop.html?category=fashion" class="category-pill-card">
+            <div class="cat-img-wrap">
+              <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=300&auto=format&fit=crop&q=80" alt="Fashion">
+            </div>
+            <div>
+              <h6 class="fw-bold mb-0">Urban Wear</h6>
+              <span class="text-muted small">Outerwear & Kicks</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg">
+          <a href="shop.html?category=accessories" class="category-pill-card">
+            <div class="cat-img-wrap">
+              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=300&auto=format&fit=crop&q=80" alt="Accessories">
+            </div>
+            <div>
+              <h6 class="fw-bold mb-0">Accessories</h6>
+              <span class="text-muted small">Timepieces & Bags</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg">
+          <a href="shop.html?category=home" class="category-pill-card">
+            <div class="cat-img-wrap">
+              <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=300&auto=format&fit=crop&q=80" alt="Home">
+            </div>
+            <div>
+              <h6 class="fw-bold mb-0">Minimal Living</h6>
+              <span class="text-muted small">Desk & Ambient</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flash Deals Section with Live Countdown -->
+  <section class="py-5" id="flash-deals-section">
+    <div class="container">
+      <div class="deal-banner p-4 p-lg-5 mb-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <span class="badge bg-danger mb-3 px-3 py-2 text-uppercase fw-bold">
+              <i class="bi bi-fire me-1"></i> Limited 24H Flash Sale
+            </span>
+            <h2 class="display-6 fw-bold mb-3">Up to 30% Off Flagship Tech & Streetwear</h2>
+            <p class="text-muted mb-4">
+              Premium precision sound and high-octane streetwear priced exclusively for the next few hours. While supplies last.
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="countdown-box">
+                <div class="countdown-number" id="deal-hours">08</div>
+                <div class="countdown-label">Hours</div>
+              </div>
+              <div class="countdown-box">
+                <div class="countdown-number" id="deal-mins">45</div>
+                <div class="countdown-label">Mins</div>
+              </div>
+              <div class="countdown-box">
+                <div class="countdown-number" id="deal-secs">12</div>
+                <div class="countdown-label">Secs</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <a href="shop.html" class="btn btn-aurora-primary btn-lg">
+              <i class="bi bi-tag-fill me-1"></i> Claim Flash Offers
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flash Deals Product Grid -->
+      <div class="row g-4" id="flash-deals-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Products Grid -->
+  <section class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <div>
+          <span class="text-primary text-uppercase fw-bold small">Handpicked Best Sellers</span>
+          <h2 class="fw-bold mb-0">Trending This Season</h2>
+        </div>
+        <div class="d-none d-md-flex gap-2">
+          <a href="shop.html" class="btn btn-aurora-outline btn-sm">View Full Collection</a>
+        </div>
+      </div>
+
+      <div class="row g-4" id="trending-products-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Dual Editorial Banner (Haute Streetwear) -->
+  <section class="py-5">
+    <div class="container">
+      <div class="deal-banner p-0 overflow-hidden">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <img src="images/hero_fashion.jpg" alt="Luminos Fashion" class="w-100 h-100 object-fit-cover" style="max-height: 480px;">
+          </div>
+          <div class="col-lg-6 order-lg-1 p-4 p-md-5">
+            <span class="text-primary fw-bold text-uppercase small">Editorial Showcase</span>
+            <h2 class="display-6 fw-bold my-3">Avant-Garde Technical Outerwear</h2>
+            <p class="text-muted mb-4">
+              Constructed with breathable micro-ripstop textiles, magnetic Fidlock hardware, and waterproof laminates designed for extreme urban environments.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="shop.html?category=fashion" class="btn btn-aurora-primary">
+                Shop Streetwear
+              </a>
+              <a href="shop.html" class="btn btn-aurora-outline">
+                View Lookbook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Testimonials -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-primary text-uppercase fw-bold small">Verified Buyers</span>
+        <h2 class="fw-bold">Acclaimed By Purists Worldwide</h2>
+        <p class="text-muted">Over 15,000 customers trust Aurora Luxe for timeless craft and acoustics.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="perk-card flex-column align-items-start p-4 h-100">
+            <div class="text-warning mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted mb-4">"The Aura SoundMax headphones blow every competitor out of the water. ANC is spooky quiet and the beryllium drivers sound like being inside an orchestra hall."</p>
+            <div class="d-flex align-items-center gap-3 mt-auto">
+              <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center fw-bold" style="width: 44px; height: 44px;">SL</div>
+              <div>
+                <h6 class="fw-bold mb-0">Sophia Laurent</h6>
+                <span class="text-muted small">Audio Engineer, Berlin</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="perk-card flex-column align-items-start p-4 h-100">
+            <div class="text-warning mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted mb-4">"Shipping to Tokyo was in under 3 business days! The titanium smartwatch feels practically weightless on wrist while delivering 2 weeks of battery."</p>
+            <div class="d-flex align-items-center gap-3 mt-auto">
+              <div class="rounded-circle bg-info text-white d-flex align-items-center justify-content-center fw-bold" style="width: 44px; height: 44px;">KT</div>
+              <div>
+                <h6 class="fw-bold mb-0">Kenji Takahashi</h6>
+                <span class="text-muted small">Industrial Designer, Tokyo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="perk-card flex-column align-items-start p-4 h-100">
+            <div class="text-warning mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted mb-4">"The Cyberdeck Bomber Jacket is pure cyberpunk perfection. Water beads right off and the magnetic pockets are so satisfying. Worth every penny."</p>
+            <div class="d-flex align-items-center gap-3 mt-auto">
+              <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center fw-bold" style="width: 44px; height: 44px;">DK</div>
+              <div>
+                <h6 class="fw-bold mb-0">Damon Thorne</h6>
+                <span class="text-muted small">Tech Founder, San Francisco</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="p-5 rounded-4 position-relative overflow-hidden" style="background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(6,182,212,0.15)); border: 1px solid var(--border-glass);">
+        <div class="row align-items-center justify-content-between g-4">
+          <div class="col-lg-6">
+            <span class="text-primary fw-bold text-uppercase small">VIP Concierge</span>
+            <h3 class="fw-bold mb-2">Join the Inner Circle</h3>
+            <p class="text-muted mb-0">Get exclusive private access to limited batch releases, private events, and a $50 welcome voucher.</p>
+          </div>
+          <div class="col-lg-5">
+            <form onsubmit="event.preventDefault(); showToast('Subscribed!', 'Welcome to Aurora Luxe VIP. Check your email for your $50 voucher!', 'success'); this.reset();">
+              <div class="input-group">
+                <input type="email" required class="form-control form-glass py-3" placeholder="Enter your email address...">
+                <button class="btn btn-aurora-primary" type="submit">Join VIP</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="aurora-footer">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4">
+          <a href="index.html" class="brand-logo mb-3 d-inline-flex">
+            <div class="brand-logo-icon"><i class="bi bi-gem"></i></div>
+            <span class="brand-text-gradient">AURORA</span>
+            <span class="brand-badge">LUXE</span>
+          </a>
+          <p class="text-muted small pe-lg-4">
+            Curating the finest in cutting-edge electronics, acoustic hardware, and luxury technical apparel. Engineered for discerning tastes.
+          </p>
+          <div class="d-flex gap-2 mt-4">
+            <a href="#" class="social-icon-btn"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon-btn"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon-btn"><i class="bi bi-discord"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="fw-bold mb-3 text-white">Collections</h6>
+          <ul class="list-unstyled">
+            <li><a href="shop.html?category=electronics" class="footer-link">Smart Electronics</a></li>
+            <li><a href="shop.html?category=audio" class="footer-link">Studio Audio</a></li>
+            <li><a href="shop.html?category=fashion" class="footer-link">Technical Apparel</a></li>
+            <li><a href="shop.html?category=accessories" class="footer-link">Luxury Accessories</a></li>
+            <li><a href="shop.html?category=home" class="footer-link">Minimalist Living</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="fw-bold mb-3 text-white">Customer Care</h6>
+          <ul class="list-unstyled">
+            <li><a href="contact.html" class="footer-link">Order Status</a></li>
+            <li><a href="contact.html" class="footer-link">Shipping & Returns</a></li>
+            <li><a href="contact.html" class="footer-link">Warranty Claim</a></li>
+            <li><a href="contact.html" class="footer-link">FAQ & Help</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Concierge</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <h6 class="fw-bold mb-3 text-white">Direct Concierge</h6>
+          <p class="text-muted small mb-2"><i class="bi bi-geo-alt me-2 text-primary"></i> 450 Madison Avenue, New York, NY 10022</p>
+          <p class="text-muted small mb-2"><i class="bi bi-envelope me-2 text-primary"></i> concierge@auroraluxe.com</p>
+          <p class="text-muted small mb-3"><i class="bi bi-telephone me-2 text-primary"></i> +1 (800) 888-AURA (2872)</p>
+          <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-glass);">
+            <div class="d-flex align-items-center gap-2 small text-muted">
+              <i class="bi bi-shield-check text-success fs-5"></i>
+              <span>Secured by Cloudflare 256-Bit SSL Protection</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 small text-muted">
+        <div>&copy; 2026 Aurora Luxe Inc. All Rights Reserved. Pair-Programmed for Excellence.</div>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-muted">Privacy Policy</a>
+          <a href="#" class="text-muted">Terms of Service</a>
+          <a href="#" class="text-muted">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-Out Offcanvas Cart Drawer -->
+  <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+    <div class="offcanvas-header border-bottom border-secondary">
+      <h5 class="offcanvas-title fw-bold" id="offcanvasCartLabel">
+        <i class="bi bi-bag-check text-primary me-2"></i> Shopping Bag
+      </h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column" id="offcanvas-cart-body">
+      <!-- Injected by app.js -->
+    </div>
+    <div class="offcanvas-footer p-3 border-top border-secondary" id="offcanvas-cart-footer">
+      <!-- Injected by app.js -->
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <div class="scroll-top-btn" id="scrollTopBtn" title="Scroll to Top">
+    <i class="bi bi-chevron-up"></i>
+  </div>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Product Data and Application Logic -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

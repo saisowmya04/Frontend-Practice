@@ -1,0 +1,43 @@
+nav{
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    background-color: red;
+    display:flex;
+    align-items: center;
+    gap:20px;
+    list-style: none;
+    padding:0px;
+}
+
+.btn{
+    padding-right: 840px;
+}
+
+ .btn1 .text1{
+    
+    border-radius: 5px;
+    padding:10px 10px;
+    
+}
+
+.btn2 .text2{
+    padding: 10px 10px;
+    background-color: green;
+}
+
+.menu{
+    display:none;
+}
+
+@media(max-width:800px){
+    .nav-links{
+        display:none;
+    }
+    .menu{
+        display:block;
+    }
+}

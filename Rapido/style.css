@@ -1,0 +1,37 @@
+.container2 {
+    background-color: #F7FAFF;
+    opacity: 2;
+}
+
+.display5 {
+    color: #333333;
+}
+
+.ms-1 {
+    margin-left: ($spacer * .25) !important;
+}
+
+.btn1 {
+    background-color: #FFCA20;
+    !important;
+}
+
+.input-group-text img {
+    overflow: hidden;
+}
+
+.form-control {
+    border-color: #D9D9D9;
+    overflow: hidden;
+}
+
+.btn1 {
+    background-color: black;
+    color: white;
+    border-radius: 20px 0px;
+    padding: 8px;
+}
+
+.service-card {
+    border-radius: 120px;
+}
