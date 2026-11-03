@@ -1,0 +1,36 @@
+{
+    "doctors": [
+        {
+            "name": "Satya Deep",
+            "salary": "4000000",
+            "gender": "Male",
+            "age": "26",
+            "specialization": "cardio",
+            "id": 1
+        },
+        {
+            "name": "Teja",
+            "salary": "7000000",
+            "gender": "Male",
+            "age": "26",
+            "specialization": "Muscles",
+            "id": 2
+        },
+        {
+            "name": "Sam",
+            "salary": "4000000",
+            "gender": "Male",
+            "age": "26",
+            "specialization": "Bones",
+            "id": 3
+        },
+        {
+            "name": "Anu",
+            "salary": "7000000",
+            "gender": "Male",
+            "age": "26",
+            "specialization": "Blood Pressure",
+            "id": 4
+        }
+    ]
+}

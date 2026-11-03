@@ -4,3 +4,12 @@ node "C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js" create vite@lates
 
 // to run project in react
 node "C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js" run dev
+
+========================================================================================
+
+if you are using npm, change the above code npm-cli.js
+
+if you are using npx, change the above code npx-cli.js
+
+if you are installing any package,
+node "C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js" install corresponding_package
